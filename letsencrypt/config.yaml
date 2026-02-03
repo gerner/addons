@@ -152,7 +152,8 @@ schema:
         dns-sakuracloud|\
         dns-simply|\
         dns-transip|\
-        dns-websupport)?"
+        dns-websupport|\
+        dns-zoneedit)?"
     rfc2136_algorithm: str?
     rfc2136_name: str?
     rfc2136_port: str?
