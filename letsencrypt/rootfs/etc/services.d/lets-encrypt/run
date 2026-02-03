@@ -317,6 +317,7 @@ if [ "${CHALLENGE}" == "dns" ]; then
 
         # ZoneEdit
         'dns-zoneedit')
+            bashio::log.info "zone edit configuration set up..."
             bashio::config.require 'dns.zoneedit_user'
             bashio::config.require 'dns.zoneedit_token'
             ACME_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}")
@@ -324,6 +325,7 @@ if [ "${CHALLENGE}" == "dns" ]; then
 
         #All other DNS providers
         *)
+            bashio::log.info "all other providers..."
             ACME_ARGUMENTS+=("--${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey")
             ;;
     esac
