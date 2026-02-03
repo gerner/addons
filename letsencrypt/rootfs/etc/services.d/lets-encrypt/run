@@ -33,6 +33,7 @@ if [ "${CHALLENGE}" == "dns" ]; then
         PROPAGATION_SECONDS="$(bashio::config 'dns.propagation_seconds')"
     fi
     bashio::log.info "Use propagation seconds: ${PROPAGATION_SECONDS}"
+    bashio::log.info "a test message"
 
     case "${DNS_PROVIDER}" in
         # Azure
