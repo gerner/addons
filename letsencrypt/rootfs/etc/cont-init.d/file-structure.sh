@@ -83,7 +83,9 @@ echo -e "aws_access_key_id = $(bashio::config 'dns.aws_access_key_id')\n" \
       "dns_transip_key_file = /data/transip-rsa.key\n" \
       "dns_transip_username = $(bashio::config 'dns.transip_username')\n" \
       "dns_websupport_identifier = $(bashio::config 'dns.websupport_identifier')\n" \
-      "dns_websupport_secret_key = $(bashio::config 'dns.websupport_secret_key')\n" > /data/dnsapikey
+      "dns_websupport_secret_key = $(bashio::config 'dns.websupport_secret_key')\n" \
+      "dns_zoneedit_user = $(bashio::config 'dns.zoneedit_user')\n" \
+      "dns_zoneedit_token = $(bashio::config 'dns.zoneedit_token')\n" > /data/dnsapikey
 
 # ClouDNS
 # Only a single non-empty auth option must be in /data/dnsapikey when using ClouDNS to avoid a certbot error

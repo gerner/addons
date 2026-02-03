@@ -35,6 +35,7 @@ ARG \
     CERTBOT_DNS_SIMPLY_VERSION \
     CERTBOT_DNS_TRANSIP_VERSION \
     CERTBOT_DNS_WEBSUPPORT_VERSION \
+    CERTBOT_DNS_ZONEEDIT_VERSION \
     CERTBOT_VERSION \
     CLOUDFLARE_VERSION \
     CRYPTOGRAPHY_VERSION
@@ -95,6 +96,7 @@ RUN \
         certbot-dns-simply==${CERTBOT_DNS_SIMPLY_VERSION} \
         certbot-dns-transip==${CERTBOT_DNS_TRANSIP_VERSION} \
         certbot-dns-websupport==${CERTBOT_DNS_WEBSUPPORT_VERSION} \
+        certbot-dns-zoneedit==${CERTBOT_DNS_ZONEEDIT_VERSION} \
         certbot==${CERTBOT_VERSION} \
         cloudflare==${CLOUDFLARE_VERSION} \
         cryptography==${CRYPTOGRAPHY_VERSION} \

@@ -168,6 +168,8 @@ schema:
     transip_username: str?
     websupport_identifier: str?
     websupport_secret_key: str?
+    zoneedit_user: str?
+    zoneedit_token: str?
   key_type: list(ecdsa|rsa)?
   elliptic_curve: list(secp256r1|secp384r1)?
   acme_server: url?
