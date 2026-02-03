@@ -26,7 +26,7 @@ TEST_CERT=$(bashio::config 'test_cert')
 VERBOSE=$(bashio::config 'verbose')
 
 if [ "${CHALLENGE}" == "dns" ]; then
-    bashio::log.info "Selected DNS Provider: ${DNS_PROVIDER}"
+    bashio::log.info "TESTMESSAGE HERE!!! Selected DNS Provider: ${DNS_PROVIDER}"
 
     PROPAGATION_SECONDS=60
     if bashio::config.exists 'dns.propagation_seconds'; then
